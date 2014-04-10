@@ -1,0 +1,22 @@
+// set a variable such as theme to be the way you set which theme to display
+// if the number does not match, then it will display the default theme
+
+$theme: 1; // this is the variable you change
+
+// default theme
+$border_color: red;
+$background_color: orange;
+
+
+// as many themes as you want
+@if $theme == 1 {
+  $border_color: green;
+  $background-color: yellow;
+}
+
+
+
+#home {
+  border: 2px solid $border_color;
+  background-color: $background_color;
+}
